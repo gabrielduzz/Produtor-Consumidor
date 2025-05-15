@@ -6,7 +6,7 @@ Projeto acadêmico baseado no problema clássico da concorrência conhecido como
 
 ## 📷 Demonstração
 
-![Demonstração do projeto](https://user-images.githubusercontent.com/your-screenshot-url-aqui)
+<img src="/resources/produtor-consumidor.gif">
 
 ---
 
