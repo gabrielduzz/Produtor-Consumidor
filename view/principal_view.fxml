@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="primaryAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1023.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.PrincipalController">
+   <children>
+      <ImageView fx:id="bar" fitHeight="677.0" fitWidth="1031.0" layoutX="-4.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/barzinho.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="barmanProducing" fitHeight="228.0" fitWidth="216.0" layoutX="620.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/barman.png" />
+         </image>
+         <effect>
+            <GaussianBlur radius="1.7" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="barmanWaiting" fitHeight="228.0" fitWidth="216.0" layoutX="620.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/barman%202.png" />
+         </image>
+         <effect>
+            <GaussianBlur radius="1.7" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="beer2" fitHeight="47.0" fitWidth="36.0" layoutX="393.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" visible="false">
+         <image>
+            <Image url="@../resources/cerveja%203.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="beer1" fitHeight="47.0" fitWidth="36.0" layoutX="560.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" visible="false">
+         <image>
+            <Image url="@../resources/cerveja%203.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="beer4" fitHeight="47.0" fitWidth="36.0" layoutX="59.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" visible="false">
+         <image>
+            <Image url="@../resources/cerveja%203.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="beer0" fitHeight="47.0" fitWidth="36.0" layoutX="710.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" visible="false">
+         <image>
+            <Image url="@../resources/cerveja%203.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="beer3" fitHeight="47.0" fitWidth="36.0" layoutX="221.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" visible="false">
+         <image>
+            <Image url="@../resources/cerveja%203.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manDrinking" fitHeight="392.0" fitWidth="189.0" layoutX="751.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/bebendo%20cerveja%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manSitting" fitHeight="391.0" fitWidth="200.0" layoutX="740.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/bebendo%20cerveja%201.2.png" />
+         </image>
+      </ImageView>
+      <Slider fx:id="sliderConsumer" layoutX="762.0" layoutY="598.0" min="1.0" prefHeight="21.0" prefWidth="207.0" rotate="180.0" stylesheets="@Style.css" value="50.0" />
+      <Slider fx:id="sliderProducer" layoutX="71.0" layoutY="599.0" min="1.0" prefHeight="21.0" prefWidth="207.0" rotate="180.0" stylesheets="@Style.css" value="50.0" />
+      <ImageView fx:id="pauseButton1" fitHeight="48.0" fitWidth="48.0" layoutX="38.0" layoutY="538.0" onMouseClicked="#pauseProducer" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/pause%20button.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pauseButton2" fitHeight="48.0" fitWidth="48.0" layoutX="958.0" layoutY="537.0" onMouseClicked="#pauseConsumer" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/pause%20button.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="resetButton" fitHeight="89.0" fitWidth="89.0" layoutX="14.0" layoutY="16.0" onMouseClicked="#reset" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/reset%20button.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plus1" fitHeight="23.0" fitWidth="27.0" layoutX="281.0" layoutY="602.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/mais.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="minus1" fitHeight="23.0" fitWidth="27.0" layoutX="47.0" layoutY="602.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/menos.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plus2" fitHeight="23.0" fitWidth="27.0" layoutX="971.0" layoutY="601.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/mais.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="minus2" fitHeight="23.0" fitWidth="27.0" layoutX="737.0" layoutY="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/menos.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="producerText" fitHeight="51.0" fitWidth="203.0" layoutX="89.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/texto%20produtor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="consumerText" fitHeight="44.0" fitWidth="184.0" layoutX="766.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/texto%20consumidor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="closeButton" fitHeight="58.0" fitWidth="58.0" layoutX="948.0" layoutY="31.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/close%20button.png" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="progressBarProducer" layoutX="661.0" layoutY="176.0" prefHeight="14.0" prefWidth="78.0" progress="0.0" visible="false" />
+      <ProgressBar fx:id="progressBarConsumer" layoutX="842.0" layoutY="223.0" prefHeight="14.0" prefWidth="78.0" progress="0.0" visible="false" />
+   </children>
+</AnchorPane>
